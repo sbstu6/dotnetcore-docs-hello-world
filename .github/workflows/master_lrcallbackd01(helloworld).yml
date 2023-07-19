@@ -19,7 +19,7 @@ jobs:
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: '6.0.x'
+          dotnet-version: '7.x'
           include-prerelease: true
 
       - name: Build with dotnet
@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'lrcallbackd01'
           slot-name: 'helloworld'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FD1EA23C1A644AA48481A1203C562B5A }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_94351BBB14754CD4B974B5F92F036EB3 }}
           package: .
